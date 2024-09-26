@@ -41,7 +41,7 @@ fun OptionsScreen(navController: NavController) { // Asegúrate de pasar el NavC
             Icon(
                 imageVector = Icons.Filled.Close,
                 contentDescription = "Cerrar",
-                tint = Color(0xFF000000), // Negro más intenso (hexadecimal para negro puro)
+                tint = Color(0xFF00516F),
                 modifier = Modifier.size(48.dp) // Ajusta el tamaño del ícono
             )
         }
