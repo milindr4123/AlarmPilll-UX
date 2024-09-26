@@ -2,7 +2,7 @@
 
 ## Descripción
 
-es una aplicación integral, disponible tanto en móvil como en web, diseñada para optimizar la gestión de recordatorios de medicamentos. La app móvil permite a los usuarios crear, editar y eliminar recordatorios manualmente o mediante comandos de voz. La integración entre ambas plataformas garantiza una experiencia fluida y eficiente en la administración de la medicación.
+Aplicación integral, disponible tanto en móvil como en web, diseñada para optimizar la gestión de recordatorios de medicamentos. La app móvil permite a los usuarios crear, editar y eliminar recordatorios manualmente o mediante comandos de voz. La integración entre ambas plataformas garantiza una experiencia fluida y eficiente en la administración de la medicación.
 La versión web ofrece funcionalidades adicionales para registrar, listar y gestionar medicamentos y vías de administración en una base de datos sincronizada.
 
 
