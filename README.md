@@ -93,3 +93,12 @@ https://drive.google.com/file/d/1NNlOQRqJ8pdh3jjblyAnInsDOLXJq_n-/view?usp=drive
 6. Finalmente, selecciona "Abrir".
 
 
+---
+
+## Contribuciones
+| Autor | Correo |
+|----------|--------------|
+| Erika Margarita Forero | e.foreros@uniandes.edu.co |
+| Jeniffer Corredor Enciso | j.corredore@uniandes.edu.co |
+
+
