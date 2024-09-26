@@ -1,4 +1,4 @@
-package com.example.alarmpill
+package com.example.alarmpill.ui
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -6,11 +6,13 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.ArrowDropDown
 import androidx.compose.material.icons.filled.ArrowForward
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -18,8 +20,8 @@ import androidx.navigation.NavController
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun Start1Screen(navController: NavController) {
-    var medicationName by remember { mutableStateOf("") }
+fun Start4Screen(navController: NavController) {
+    var medicationQuantity by remember { mutableStateOf(12) } // Mantener un valor numérico
 
     Column(
         modifier = Modifier
@@ -44,7 +46,6 @@ fun Start1Screen(navController: NavController) {
             )
         }
 
-
         // Espaciado en la parte superior
         Column(
             modifier = Modifier
@@ -54,35 +55,76 @@ fun Start1Screen(navController: NavController) {
         ) {
             Spacer(modifier = Modifier.height(10.dp)) // Ajustar el espaciado según lo necesites
 
-            // Label para el TextField
+
+            // Texto de descripción alineado a la izquierda
             Text(
-                text = "Ingrese el nombre de su \n medicamento.",
+                text = "Ingrese la duración del  \n tratamiento en días.",
                 fontSize = 18.sp,
                 color = Color(0xFF00516F),
                 modifier = Modifier
-                    .padding(start = 16.dp, bottom = 16.dp) // Ajustar el margen a la izquierda
+                    .padding(bottom = 16.dp, start = 16.dp) // Alinear el texto a la izquierda con un margen
                     .align(Alignment.Start) // Alinear el texto a la izquierda
             )
 
-            Spacer(modifier = Modifier.height(60.dp)) // Ajustar el espaciado según lo necesites
+            Spacer(modifier = Modifier.height(76.dp)) // Ajustar el espaciado según lo necesites
 
-            // Caja de texto sencilla
+            // Caja de texto con flechas hacia arriba y abajo para aumentar/disminuir el valor
             OutlinedTextField(
-                value = medicationName,
-                onValueChange = { medicationName = it },
+                value = medicationQuantity.toString(),
+                onValueChange = { newValue ->
+                    newValue.toIntOrNull()?.let {
+                        medicationQuantity = it
+                    }
+                },
+                trailingIcon = {
+                    Column {
+                        // Flecha hacia arriba para incrementar
+                        IconButton(
+                            onClick = { medicationQuantity++ },
+                            modifier = Modifier
+                                .size(16.dp)
+                                .rotate(180f) // Aplicamos la rotación de 180 grados
+                        ) {
+                            Icon(
+                                imageVector = Icons.Default.ArrowDropDown,
+                                contentDescription = "Incrementar",
+                                tint = Color.Black,
+                                modifier = Modifier.size(24.dp)
+                            )
+                        }
+
+                        // Flecha hacia abajo para decrementar
+                        IconButton(
+                            onClick = {
+                                if (medicationQuantity > 0) medicationQuantity--
+                            },
+                            modifier = Modifier.size(16.dp) // Tamaño del botón
+                        ) {
+                            Icon(
+                                imageVector = Icons.Default.ArrowDropDown, // Flecha hacia abajo
+                                contentDescription = "Disminuir",
+                                tint = Color.Black,
+                                modifier = Modifier.size(24.dp) // Tamaño de la flecha
+                            )
+                        }
+                    }
+                },
                 modifier = Modifier
-                    .fillMaxWidth(0.9f) // Ajustar el tamaño a un 90% del ancho
-                    .padding(16.dp),
-                shape = RoundedCornerShape(16.dp), // Bordes más redondeados
+                    .fillMaxWidth(0.3f) // Ajustar el tamaño
+                    .padding(5.dp),
+                shape = RoundedCornerShape(16.dp), // Bordes redondeados
                 colors = TextFieldDefaults.outlinedTextFieldColors(
-                    focusedBorderColor = Color.Gray, // Color del borde enfocado
-                    unfocusedBorderColor = Color.Gray, // Color del borde no enfocado
-                    containerColor = Color.White // Color de fondo
+                    focusedBorderColor = Color(0xFF00516F),
+                    unfocusedBorderColor = Color.Gray,
+                    containerColor = Color.White
                 )
             )
-        }
 
-        Spacer(modifier = Modifier.height(304.dp)) // Ajustar este espaciado según sea necesario
+            Spacer(modifier = Modifier.height(86.dp)) // Ajustar este espaciado según sea necesario
+
+                   }
+
+        Spacer(modifier = Modifier.height(223.dp)) // Ajustar este espaciado según sea necesario
 
         // Row para los botones de navegación
         Row(
@@ -91,7 +133,7 @@ fun Start1Screen(navController: NavController) {
         ) {
             // Botón de Atrás
             IconButton(
-                onClick = { navController.navigate("options") }, // Navegar a la pantalla de opciones
+                onClick = { navController.navigate("inicio3") }, // Navegar a la pantalla de opciones
                 modifier = Modifier.size(58.dp) // Tamaño del botón
             ) {
                 Icon(
@@ -106,8 +148,9 @@ fun Start1Screen(navController: NavController) {
             Spacer(modifier = Modifier.width(190.dp)) // Espacio entre las flechas
 
             // Botón de Adelante
+
             IconButton(
-                onClick = { navController.navigate("inicio2") }, // Navegar a la pantalla siguiente
+                onClick = { navController.navigate("inicio4") }, // Navegar a la pantalla siguiente
                 modifier = Modifier.size(58.dp) // Tamaño del botón
             ) {
                 Icon(

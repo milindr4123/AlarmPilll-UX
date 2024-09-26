@@ -8,6 +8,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.alarmpill.ui.AlarmPillScreen
 import com.example.alarmpill.ui.OptionsScreen
+import com.example.alarmpill.ui.Start4Screen
 import com.example.alarmpill.ui.theme.AlarmPillTheme
 
 class MainActivity : ComponentActivity() {
@@ -28,6 +29,18 @@ class MainActivity : ComponentActivity() {
                     // Nueva pantalla de opciones
                     composable("inicio1") {
                         Start1Screen(navController)
+                    }
+                    // Nueva pantalla de opciones
+                    composable("inicio2") {
+                        Start2Screen(navController)
+                    }
+                    // Nueva pantalla de opciones
+                    composable("inicio3") {
+                        Start3Screen(navController)
+                    }
+                    // Nueva pantalla de opciones
+                    composable("inicio4") {
+                        Start4Screen(navController)
                     }
                 }
             }
