@@ -8,10 +8,10 @@ La versión web ofrece funcionalidades adicionales para registrar, listar y gest
 
 ## Tabla de Contenidos
 - [Características](#características)
-- [Flujo de la Aplicación con las 6 pantallas](#flujo-de-la-aplicación)
+- [Flujo de la Aplicación](#flujo-de-la-aplicación)
 - [Imágenes de Pantalla](#imágenes-de-pantalla)
-- [Como correr la App desde un emulador](#como-correr-la-App-desde-un-emulador)
-- [Instalación apk](#instalación)
+- [Cómo correr la App desde un emulador](#como-correr-la-app-desde-un-emulador)
+- [Instalación apk](#instalación-apk)
 - [Contribuciones](#contribuciones)
 
 ---
