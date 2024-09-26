@@ -10,7 +10,7 @@ La versión web ofrece funcionalidades adicionales para registrar, listar y gest
 - [Características](#características)
 - [Flujo de la Aplicación con las 6 pantallas](#flujo-de-la-aplicación)
 - [Imágenes de Pantalla](#imágenes-de-pantalla)
-- [Como correr la App desde un emulador](#probando-en-emulador)
+- [Como correr la App desde un emulador](#como-correr-la-App-desde-un-emulador)
 - [Instalación apk](#instalación)
 - [Contribuciones](#contribuciones)
 
@@ -59,6 +59,7 @@ https://drive.google.com/file/d/1NNlOQRqJ8pdh3jjblyAnInsDOLXJq_n-/view?usp=drive
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/milindr4123/AlarmPilll-UX.git
+   ```
 2. Se recomienda instalar Android Studio Koala Feature Drop | 2024.1.2 Patch 1.
 ![img_2.png](img_2.png)
 
@@ -82,7 +83,7 @@ https://drive.google.com/file/d/1NNlOQRqJ8pdh3jjblyAnInsDOLXJq_n-/view?usp=drive
 ---
 
 ## Instalación apk
-1. Dentro de la ubicación: C:\Users\Erika\Documents\AlarmPill-UX\app\debug\app-debug.apk
+1. Dentro de la ubicación: \app\debug\app-debug.apk
 2. Descarga el APK en tu dispositivo.
 3. Abre el APK. Puede que te aparezca la siguiente imagen, en cuyo caso debes seleccionar "Abrir  ![img_6.png](img_6.png)
 4. Luego selecciona "Instalar"
