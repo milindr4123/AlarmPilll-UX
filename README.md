@@ -58,20 +58,25 @@ https://drive.google.com/file/d/1NNlOQRqJ8pdh3jjblyAnInsDOLXJq_n-/view?usp=drive
 ## Como correr la App desde un emulador
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tu_usuario/AlarmPill.git
+   git clone https://github.com/milindr4123/AlarmPilll-UX.git
 2. Se recomienda instalar Android Studio Koala Feature Drop | 2024.1.2 Patch 1.
-  ![img_2.png](img_2.png)
+![img_2.png](img_2.png)
+
 3. Se recomienda hacer clic en: File → Sync Project with Gradle Files.
-  ![img_1.png](img_1.png)
+![img_1.png](img_1.png)
+
 04. Haz clic en Device Manager en la parte lateral del IDE.
-  ![img_3.png](img_3.png)
+![img_3.png](img_3.png)
+
 5. Luego, haz clic en Add a New Device.
-   ![img_4.png](img_4.png)
+![img_4.png](img_4.png)
+
 6. Haz clic en Create Virtual Device.
 7. Selecciona el dispositivo y haz clic en Siguiente hasta finalizar.
-   ![img.png](img.png)
+![img.png](img.png)
+
 8. Finalmente, haz clic en Run.
-9. ![img_5.png](img_5.png)
+![img_5.png](img_5.png)
 
 
 ---
